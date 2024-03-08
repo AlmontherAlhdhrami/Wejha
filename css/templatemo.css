@@ -1,6 +1,8 @@
 /* Nav */
 .navbar {
   padding: 5px; /* Reduce padding to make the header thinner */
+  z-index: 0px;
+  opacity: initial;
 }
 #templatemo_main_nav .nav-link:hover {
   color: rgb(20, 149, 20); /* Change text color on hover */
