@@ -1,8 +1,7 @@
 /* Nav */
 .navbar {
   padding: 5px; /* Reduce padding to make the header thinner */
-  z-index: 0px;
-  opacity: initial;
+ 
 }
 #templatemo_main_nav .nav-link:hover {
   color: rgb(20, 149, 20); /* Change text color on hover */
@@ -82,17 +81,6 @@
   }
 }
 
-/* Rest of original CSS... */
-/* Hero Carousel */
-/* Accordion */
-/* Shop */
-/* Product */
-/* Brand */
-/* Carousel Hero */
-/* Carousel Brand */
-/* Services */
-/* Contact map */
-/* Footer */
 
 /* Specific styles for responsive adjustments */
 @media (min-width: 576px) {
