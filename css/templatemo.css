@@ -1,0 +1,112 @@
+/* Nav */
+.navbar {
+  padding: 5px; /* Reduce padding to make the header thinner */
+}
+#templatemo_main_nav .nav-link:hover {
+  color: rgb(20, 149, 20); /* Change text color on hover */
+}
+.nav-icon{width: 40px; height: 50px;   line-height: 50px;}
+.navbar-brand {
+  margin-right: 0.5rem; /* Reduce space between logo and brand name */
+  font-size: 30px; /* Smaller brand name */
+}
+
+.navbar-brand img {
+  height: 70px; /* Reduce logo size */
+  width: auto; /* Maintain aspect ratio */
+}
+
+#templatemo_main_nav a {
+  color: #212934;
+  font-size: 0.8rem; /* Smaller text for nav links */
+}
+
+#templatemo_main_nav .navbar-nav {
+  max-width: 450px; /* Adjust as necessary */
+}
+
+#templatemo_main_nav .nav-item {
+  margin-right: 0.25rem; /* Less space between menu items */
+}
+
+#templatemo_main_nav .nav-link {
+  padding: 0.25rem 1rem; /* Reduce padding for thinner appearance */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 0.8rem; /* Even smaller on mobile devices */
+  }
+  #templatemo_main_nav .nav-link {
+    font-size: 0.7rem; /* Smaller font size for nav links on mobile */
+  }
+  .navbar-brand img {
+    height: 25px; /* Even smaller logo on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 0.8rem; /* Even smaller on mobile devices */
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.7rem; /* Smaller font size for nav links on mobile */
+  }
+  .navbar-brand img {
+    height: 25px; /* Even smaller logo on mobile */
+  }
+}
+#templatemo_main_nav a {
+  color: #212934;
+  font-size: 0.9rem;
+}
+#templatemo_main_nav .navbar-nav {
+  max-width: 600px;
+}
+#templatemo_main_nav .nav-icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.25rem 0.5rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  #templatemo_main_nav .nav-item {
+    margin-right: 0.25rem;
+  }
+}
+
+/* Rest of original CSS... */
+/* Hero Carousel */
+/* Accordion */
+/* Shop */
+/* Product */
+/* Brand */
+/* Carousel Hero */
+/* Carousel Brand */
+/* Services */
+/* Contact map */
+/* Footer */
+
+/* Specific styles for responsive adjustments */
+@media (min-width: 576px) {
+  /* Adjustments for small devices */
+}
+
+@media (min-width: 768px) {
+  /* Adjustments for medium devices */
+  #templatemo_main_nav .navbar-nav {max-width: 450px;}
+}
+
+@media (min-width: 992px) {
+  /* Adjustments for large devices */
+  #templatemo_main_nav .navbar-nav {max-width: 550px;}
+}
+
+@media (min-width: 1200px) {
+  /* Adjustments for extra large devices */
+}
