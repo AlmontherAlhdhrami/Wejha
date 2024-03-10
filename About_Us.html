@@ -13,73 +13,85 @@
     <link rel="stylesheet" href="css/hlperaboutUs.css">
 
     <style>
-    * {
-      font-family: 'Nunito', sans-serif;
-    }
+ /* Universal selector */
+* {
+  font-family: 'Nunito', sans-serif;
+}
+/* Simple selector*/
+a {
+    text-decoration: none;
+}
+/* Class selector */
+.bigContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5; /* Background color */
+  margin: 10px auto;
+  padding: 40px;
+  border-radius: 15px;
+}
+/* ID selector */
+#ima {
+  margin-left: 200px;
+}
+/* Class selector */
+.text-blk {
+  padding: 10px;
+}
+/* Class selector */
+.mainImg {
+  width: 45%; /* Adjust based on your preference */
+  height: auto;
+  border-radius: 10px;
+}
+/* Class selector */
+.headingText {
+  font-size: 22px;
+  font-weight: bold;
+  color: #59ab6e; /* Color for heading text */
+}
+/* Class selector */
+.subHeadingText,.description {
 
-    .bigContainer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f5f5f5; /* Background color */
-      margin: 20px auto;
-      padding: 40px;
-      border-radius: 15px;
-    }
-#ima{margin-left: 200px;}
-    .text-blk {
-      padding: 10px;
-    }
+  font-size: 18px;
+  line-height: 26px;
+  color: #324851; /* Dark color for text for readability */
+}
+/* Class selector */
+.sentence {
+  display: block; /* Makes span behave like a block element */
+  margin-bottom: 10px; /* Adds some space after each sentence */
+}
+/* Contextual Selector */
+.text-blk .explore {
+  padding: 12px 48px;
+  background-color: #59ab6e; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+/* Pseudo Classes selector */
+.explore:hover {
+  background-color: #427a5b; /* Darker green */
+}
+/* Media query */
+@media (max-width: 768px) {
+  /* Class selector */
+  .bigContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Class selector */
+  .mainImg {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
 
-    .mainImg {
-      width: 45%; /* Adjust based on your preference */
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .headingText {
-      font-size: 22px;
-      font-weight: bold;
-      color: #59ab6e; /* Color for heading text */
-    }
-
-    .subHeadingText, .description {
-      font-size: 18px;
-      line-height: 26px;
-      color: #324851; /* Dark color for text for readability */
-    }
-
-    /* Adding specific colors to sentences */
-    .sentence {
-      display: block; /* Makes span behave like a block element */
-      margin-bottom: 10px; /* Adds some space after each sentence */
-    }
-
-   
-    .text-blk .explore {
-      padding: 12px 48px;
-      background-color: #59ab6e; /* Button background color */
-      color: white;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .explore:hover {
-      background-color: #427a5b; /* Darker green */
-    }
-
-    @media (max-width: 768px) {
-      .bigContainer {
-        flex-direction: column;
-        text-align: center;
-      }
-      .mainImg {
-        width: 80%;
-        margin-bottom: 20px;
-      }
-    }
     </style>
 </head>
 <body>
@@ -149,16 +161,14 @@
             <p class="headingText">About Team</p>
             <span class="sentence green">We are Sultan Qaboos University students passionate about simplifying travel in Oman.</span>
             <span class="sentence blue">Our website bridges adventurers with unique local accommodations, focusing on user-friendly experiences for both guests and admins.</span>
-            <span class="sentence red">By engaging directly with our community, we ensure our platform meets real needs—offering clear information, easy bookings, and exciting deals.</span>
+            <span class="sentence red">By engaging directly with our community, we ensure our platform meets real needs offering clear information, easy bookings, and exciting deals.</span>
             <span class="sentence green">Join us in discovering Oman’s hidden gems comfortably and conveniently.</span>
-            <a class="explore" href="#">View Services</a>
+            <br><br><a class="explore" href="#">View Services</a>
         </div>
         <div id="ima">
             <img class="mainImg" src="image/logo.jpg" alt="Logo">
         </div>
-    </div>
-    
-    <!--start footer-->
+          <!--start footer-->
     <footer class="site-footer">
         <div class="container">
             <div class="logo-footer">
@@ -175,5 +185,8 @@
         </div>
     </footer>
     <!--End  footer-->
+    </div>
+    
+  
 </body>
 </html>
