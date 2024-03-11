@@ -14,6 +14,9 @@
     <link rel="icon" href="image/logo.jpg" type="image/icon type">
 <title> About Us</title>
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Madimi+One&display=swap');
+      
  /* Universal selector */
 * {
   font-family: 'Nunito', sans-serif;
@@ -93,7 +96,80 @@ a {
   }
 }
 
-    </style>
+/*  card style */
+
+
+.cotiner{
+    border-radius: 5%;
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+}
+.cardimg,.card{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+   transition: transform .6s linear;
+}
+.cardimg img{
+    height: 50%;
+     margin-left: 10px;
+    padding-left: 10px;
+    margin: 10px;
+}
+.cardimg{transform:perspective(600px)  rotateY(0deg);}
+.card{
+    background: #333;
+    transform:perspective(600px)  rotateY(180deg);
+}
+.content{
+    text-align: center;
+    
+    width: 100%;
+
+}
+table{
+    color:yellow;
+    height: 70%;
+  
+    position:relative;
+    top: 30%;
+    left: 30%;
+  justify-content: center;
+  justify-items: center;
+}
+.cotiner:hover> .cardimg{
+    transform:perspective(600px) rotateY(-180deg);
+    
+}
+.cotiner:hover> .card{
+    transform:perspective(600px) rotateY(0deg);
+}
+
+section{display: flex;
+  
+  position: absolute;
+  left: 20%;
+  margin: 30px;
+
+
+
+}
+.ma{background-color: #333;}
+h2{margin:15px;  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;}
+
+h4{color: deepskyblue; margin:30px ;}
+.t a:hover{
+
+  color: #59ab6e;
+}
+</style>
+     
 </head>
 <body>
     <!-- Header -->
@@ -188,7 +264,90 @@ a {
     </footer>
     <!--End  footer-->
     </div>
-    
+
+    <section class="ma" style="margin-right: 55%; ">
+    <section >
   
+    <div class="cotiner m" style="margin-left: 30px;">
+
+      <div class="cardimg" style="background-color: #333;">
+        <h2 style="color: rgb(245, 245, 245);">contact me</h2>
+        <img src="image/dev.webp" alt="">
+      
+      
+      
+      </div>
+      <div class="card">
+      <div class="content m">
+          <div class="t">
+          <h4 > Ia'm Almonther Alhdhrami
+
+            this is my social media account
+          </h4>    
+          
+          <a href="https://github.com/AlmontherAlhdhrami-
+                " target="_blank"><i class="fab fa-github" style="size: 1ocm;"></i></a>
+                <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https:s129030@student.squ.edu.om"><i class="fas fa-envelope"></i></a>
+      </div>
+      </div>
+      </div>
+          </div>
+          <div class="cotiner m" style="margin-left: 30px;">
+
+            <div class="cardimg" style="background-color: #333;">
+              <h2 style="color: rgb(245, 245, 245);">contact me</h2>
+              <img src="image/dev.webp" alt="">
+            
+            
+            
+            </div>
+            <div class="card">
+            <div class="content m">
+
+              <h4 > Ia'm Almonther Alhdhrami
+
+                this is my social media account
+              </h4>    
+              
+                <div class="t">
+                  <a href="https://github.com/AlmontherAlhdhrami-
+                  " target="_blank"><i class="fab fa-github" style="size: 1ocm;"></i></a>
+                  <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https:s129030@student.squ.edu.om"><i class="fas fa-envelope"></i></a>      
+            </div>
+            </div>
+            </div>
+                </div>
+
+
+                <div class="cotiner m" style="margin-left: 30px;">
+
+                  <div class="cardimg" style="background-color: #333;">
+                    <h2 style="color: rgb(245, 245, 245);">contact me</h2>
+                    <img src="image/dev.webp" alt="">
+
+                  </div>
+                  <div class="card">
+                  <div class="content m">
+
+                    <h4 > Ia'm Almonther Alhdhrami
+
+                      this is my social media account
+                    </h4>    
+                    
+                      <div class="t">
+                        <a href="https://github.com/AlmontherAlhdhrami-
+                        " target="_blank"><i class="fab fa-github" style="size: 1ocm;"></i></a>
+                        <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https:s129030@student.squ.edu.om"><i class="fas fa-envelope"></i></a>    
+                  </div>
+                  </div>
+                  </div>
+                      </div>
+        
+        
+        </section></section>
+     
 </body>
 </html>
