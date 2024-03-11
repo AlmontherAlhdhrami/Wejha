@@ -10,6 +10,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/Reservation.css">
+    <style>
+        
+        .imgb{
+            height: 100%;
+            margin: 0;
+            background-image: url('image/b2.webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
   
 </head>
 <body>
@@ -73,9 +85,35 @@
         </div>
     </nav>
     <!-- End Header -->
-
-
+    <div class="imgb">
+        
+    <center >
+        <div class="booking-form" style="position: relative; top: 45px; margin-bottom: 150px;">
+            
+            <form action="">
+                      <caption  > </caption>
+                <table>
+                    <tr>
+                    <th  colspan="2"><img src="image/logo.jpg" alt="" style="width: 100px;"> <span></span><h2> Booking Now !</h2></th></tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="phone" placeholder="Phone Number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="Name" placeholder="Full Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="time" name="time" placeholder="Time"></td>
+                        <td><input type="date" name="date" placeholder="Date"></td>
+                    </tr>
+                    <tr>
+                        <td class="merge-row" rowspan="2"><input type="number" name="days" placeholder="Number of days"></td>
+                        <td class="submit-cell"><input type="submit" value="Submit"></td>
+                    </tr>
     
+                </table>
+            </form>
+        </div>
+    </center>
     <!--start footer-->
     <footer class="site-footer">
         <div class="container">
@@ -91,7 +129,7 @@
             </div>
             <p class="footer-text">© 2024 Wejha - All Rights Reserved</p>
         </div>
-    </footer>
+    </footer></div>
     <!--End  footer-->
 </body>
 </html>
