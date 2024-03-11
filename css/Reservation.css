@@ -2,7 +2,7 @@
 .booking-form {
    
     
-    background-color: #233a23;
+    background-color: #4C6363;
     border: 2px solid #4CAF50;
     border-radius: 5px;
     padding: 20px;
@@ -19,7 +19,7 @@ td, th {
     padding: 8px;
 }
 tr:nth-child(even) {
-    background-color: #233a23;
+    background-color: #ffffff;
 }
 tr:hover {
     background-color: #ddd;
@@ -35,7 +35,7 @@ input[type=text], input[type=time], input[type=date], input[type=number] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #4CAF50;
     border-radius: 4px;
     box-sizing: border-box;
 }
