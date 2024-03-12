@@ -19,6 +19,76 @@
 
     <!--End slide css -->
   
+    <style>
+.faq-container {
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    padding: 20px;
+    width: 100%;
+    margin-top: 60px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-checkbox {
+    display: none; /* Hide the checkbox itself */
+}
+
+.faq-checkbox + .faq-question {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: block;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq-checkbox + .faq-question:before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq-checkbox:checked + .faq-question:before {
+    content: '-';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-left: 30px; /* Align text with the questions */
+    color: #333;
+}
+
+.faq-checkbox:checked ~ .faq-answer {
+    max-height: 1000px; /* Ensure it's large enough to display any content */
+    transition: max-height 0.5s ease-in;
+}
+
+.contact-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -135,6 +205,54 @@
     </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
   <!--slide end--> 
+
+
+  <!--rate block -->
+
+
+  <div class="faq-container">
+    
+    <div class="faq-item">      
+        <input type="checkbox" id="faq1" class="faq-checkbox">
+        <label for="faq1" class="faq-question">What is the purpose of this website?</label>
+        <div class="faq-answer">
+          This website provides a platform for booking unique accommodations like chalets and caravans across various locations.
+        </div> 
+    </div>
+    <hr>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq2" class="faq-checkbox">
+        <label for="faq2" class="faq-question">What services does the website offer?</label>
+        <div class="faq-answer">
+          Our service revolves around providing detailed information and booking facilities for exclusive chalets and caravans suitable for various needs and preferences.
+        </div>
+    </div>
+    <hr>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq3" class="faq-checkbox">
+        <label for="faq3" class="faq-question">How can I book a chalet or caravan?</label>
+        <div class="faq-answer">
+          You can book a chalet or caravan by selecting your desired accommodation, checking availability, and completing the online booking process.
+        </div>
+    </div>
+    <hr>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq4" class="faq-checkbox">
+        <label for="faq4" class="faq-question">Are there any special deals or discounts available?</label>
+        <div class="faq-answer">
+          Yes, special deals and discounts are often available, especially during off-peak seasons. Check our website regularly for the latest offers.
+        </div>
+    </div>
+    <hr>
+
+    <a href="Contact_Us.html" class="contact-button">Contact Us!</a>
+</div>
+
+
+    <!--  end rate block-->
 
 
 <!--End slide -->
