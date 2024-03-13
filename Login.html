@@ -12,7 +12,79 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="icon" href="image/logo.jpg" type="image/icon type">
     <title>Login</title>
-  
+    
+    <!-- Additional Styles -->
+    <style>
+        section.login {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            background-image: url("image/caravan.jpg");
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+            overflow: hidden;
+        }
+
+        form {
+            background: white;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 40px;
+            flex-direction: column;
+            display: flex;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        label {
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgb(100, 100, 100);
+        }
+
+        input {
+            width: 300px;
+            border: none;
+            border-bottom: 2px solid #333;
+            padding: 10px 0px;
+            outline: none;
+        }
+
+        input:focus {
+            border-bottom: 2px solid #3f8d34;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 150px;
+            border: none;
+            background: #333;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 10px;
+            box-shadow: 2px 2px 0px #3f8d34;
+        }
+
+        button:hover {
+            background: #3f8d34;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -76,7 +148,24 @@
     </nav>
     <!-- End Header -->
 
-
+    <!-- Login Section -->
+    
+    <section class="login">
+        <form>
+            <h1>Log In</h1>
+            <div>
+                <label>Username</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="Password">
+            </div>
+            <button>Log In</button>
+        </form>
+    </section>
+    
+    <!-- End Login Section -->
     
     <!--start footer-->
     <footer class="site-footer">
