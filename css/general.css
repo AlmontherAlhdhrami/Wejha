@@ -2,13 +2,26 @@
     font-size: 18px;
     cursor: pointer;
 }
-
-@media (max-width: 991px) {
-    .nav-icon i.fa-search {
-        display: none;
-    }
+/* Default styles for all screen sizes */
+body {
+  font-size: 16px;
 }
-.navbar-brand img {
+
+/* Media query for screens smaller than 768px (e.g., tablets and mobile phones) */
+@media (max-width: 767px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+/* Media query for screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 575px) {
+  body {
+      font-size: 12px;
+  }
+}
+
+vbar-brand img {
     
     max-height:120px; /* Adjust based on your logo's size */
      
