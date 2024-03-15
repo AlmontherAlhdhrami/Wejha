@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Stylesheets -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="icon" href="image/logo.jpg" type="image/icon type">
+    <title>Login</title>
+    
+    <!-- Additional Styles -->
+    <style>
+        section.login {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            background-image: url("image/caravan.jpg");
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+            overflow: hidden;
+        }
+
+        form {
+            background: white;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 40px;
+            flex-direction: column;
+            display: flex;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        label {
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgb(100, 100, 100);
+        }
+
+        input {
+            width: 300px;
+            border: none;
+            border-bottom: 2px solid #333;
+            padding: 10px 0px;
+            outline: none;
+        }
+
+        input:focus {
+            border-bottom: 2px solid #3f8d34;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 150px;
+            border: none;
+            background: #333;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 10px;
+            box-shadow: 2px 2px 0px #3f8d34;
+        }
+
+        button:hover {
+            background: #3f8d34;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+       
+        <div class="container d-flex justify-content-between align-items-center"> 
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                  <img src="image/logo.jpg" alt="Wejha Logo">
+            </a>
+           
+            <!-- Brand Logo and Text -->
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                 <!-- Correct the src path as needed -->
+                Wejha
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Caravans.html">Caravans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Chalets.html">Chalets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About_Us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <!-- Reservation Icon -->
+                    <a class="nav-icon position-relative text-decoration-none" href="Reservation.html">
+                        <i class="fas fa-calendar-alt text-dark mr-3"></i>
+                    </a>
+                   
+                    <!-- Login Icon -->
+                    <a class="nav-icon position-relative text-decoration-none" href="Login.html">
+                        <i class="fas fa-sign-in-alt text-dark mr-3"></i>
+                    </a>
+
+                    <!-- Sign-In Icon -->
+                    <a class="nav-icon position-relative text-decoration-none" href="Sign-In.html">
+                        <i class="fas fa-user-plus text-dark mr-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Login Section -->
+    
+    <section class="login">
+        <form>
+            <h1>Log In</h1>
+            <div>
+                <label>Username</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="Password">
+            </div>
+            <button>Log In</button>
+        </form>
+    </section>
+    
+    <!-- End Login Section -->
+    
+    <!--start footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="logo-footer">
+                <a href="index.html" ><img src="image/logo.jpg" alt="Wejha Logo"></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/AlmontherAlhdhrami-
+                " target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="footer-text">© 2024 Wejha - All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--End  footer-->
+</body>
+</html>

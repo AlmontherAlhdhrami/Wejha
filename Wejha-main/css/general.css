@@ -1,0 +1,68 @@
+.nav-icon i.fa-search, .nav-icon i.fa-sign-in-alt {
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Default styles for all screen sizes */
+body {
+  font-size: 16px;
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and mobile phones) */
+@media (max-width: 767px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+/* Media query for screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 575px) {
+  body {
+      font-size: 12px;
+  }
+}
+
+vbar-brand img {
+    
+    max-height:120px; /* Adjust based on your logo's size */
+     
+}
+
+.site-footer {
+    
+    color: #0a0a0b; /* A light text color */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo-footer img {
+    width: 120px; /* Adjust based on actual logo size */
+    height: auto;
+    
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #cfd6e1; /* Match the text color */
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  
+  .social-icons a:hover {
+    color: #59ab6e; /* Highlight color when hovered, change if needed */
+  }
+  
+  .footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
