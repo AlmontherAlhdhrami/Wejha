@@ -91,7 +91,32 @@
     cursor: pointer;
     border-radius: 8px;
 }
+.table-bordered th,
+    .table-bordered td {
+      border: 1px solid #dee2e6;
+    }
 
+    .table-bordered {
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .table th,
+    .table td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+
+    .table thead th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .table-bordered thead th, .table-bordered thead td {
+      border-bottom-width: 2px;
+    }
 
     </style>
 </head>
@@ -116,18 +141,23 @@
             </button>
 
             <!-- Navbar Links -->
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between " id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
+                        <div class="dropdown">
+                            <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" style="text-decoration: none ;">Content</a>
+                        <ul class="dropdown-menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="Caravans.html">Caravans</a>
+                            <a class="nav-link" href="Caravans.html" style="border: #59ab6e solid;margin-bottom: 5px;">Caravans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Chalets.html">Chalets</a>
+                            <a class="nav-link" href="Chalets.html" style="border: #59ab6e solid;">Chalets</a>
                         </li>
+                    </ul>
+                       </div>
                         <li class="nav-item">
                             <a class="nav-link" href="About_Us.html">About Us</a>
                         </li>
@@ -136,7 +166,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar align-self-center d-flex">
+                <div class="navbar align-self-center d-flex nav-tabs">
                     <!-- Reservation Icon -->
                     <a class="nav-icon position-relative text-decoration-none" href="Reservation.html">
                         <i class="fas fa-calendar-alt text-dark mr-3"></i>
@@ -171,8 +201,8 @@
                 <p style="color: #59ab6e; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">Escape to Winter Wonderland! Cozy up in our luxurious chalet, surrounded by serene snowscapes.
                      <br> Experience ultimate comfort with our warm, inviting interiors and panoramic views. <br>
                      Perfect for family getaways or romantic retreats. Book your snowy escape today!</p>
-                <a href="#">Booking NOW</a> </div>
-              <div class="col-md-5 col-12 order-md-2 order-1"><img src="image/sh1.webp" class="mx-auto" alt="slide"></div>
+                <a href="Reservation.html">Booking NOW</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="image/sh1.webp" class="mx-auto rounded" alt="slide"></div>
             </div>
           </div>
         </div>
@@ -187,8 +217,8 @@
                 <p style="color: #59ab6e; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">Summer Bliss Awaits! Relax and rejuvenate in our charming summer chalet. <br>
                      Surrounded by lush greenery and clear blue skies, it's your perfect countryside retreat. <br>
                       Bask in nature, enjoy serene views, and unwind in comfort. <br>  Your summer sanctuary calls!</p>
-                <a href="#">Booking NOW</a> </div>
-              <div class="col-md-5 col-12 order-md-2 order-1"><img src="image/sh2.webp" class="mx-auto" alt="slide"></div>
+                <a href="Reservation.html">Booking NOW</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="image/sh2.webp" class="mx-auto rounded" alt="slide"></div>
             </div>
           </div>
         </div>
@@ -201,8 +231,8 @@
                 <h4 style="color: #fdac32; font-family: 'Arial', sans-serif;">
                     Modern Caravan:</h4>
                 <p style="color: #59ab6e; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">Adventure Awaits! Discover the great outdoors with our sleek, modern caravan. <br> Immerse yourself in nature without sacrificing comfort. <br> Ideal for explorers seeking a touch of luxury. <br>  Your mobile retreat in the heart of the wilderness. <br> Start your journey with us now</p>
-                <a href="#">Booking NOW</a> </div>
-              <div class="col-md-5 col-12 order-md-2 order-1"><img src="image/cr1.webp" class="mx-auto" alt="slide"></div>
+                <a href="Reservation.html">Booking NOW</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="image/cr1.webp" class="mx-auto rounded" alt="slide"></div>
             </div>
           </div>
         </div>
@@ -212,11 +242,93 @@
   <!--slide end--> 
 
 
-  <!--rate block -->
+  <!--start table content -->
+<div style="display: flex; margin: 20px;">
+
+<!--table 1-->
+<div class="container">
+    <h2>Reservation Statistics</h2>
+    <table class="table table-bordered" >
+      <thead>
+        <tr>
+          <th rowspan="2">Month</th>
+          <th colspan="2">Reservation Statistics</th>
+          <th rowspan="2">High Reservation Periods</th>
+        </tr>
+        <tr>
+          <th>Average Reservations</th>
+          <th>Lowest Reservation Period</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>50</td>
+          <td>5th - 10th</td>
+          <td>Winter</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>60</td>
+          <td>12th - 15th</td>
+          <td>summer</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+
+   
+
+<!--End table 1-->
+
+
+<!--start table 2 -->
+
+
+<h2>Monthly Statistics</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Highest Period</th>
+      <th>Lowest Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>20th - 25th</td>
+      <td>1st - 5th</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>10th - 15th</td>
+      <td>26th - 28th</td>
+    </tr>
+   
+  </tbody>
+</table>
+</div>
+
+<!--End table 2-->
+
+
+
+
+    
+</div>
+
+
+
+
+  <!--End tabple content -->
+
+
+  <!--quetions block -->
 
 
   <div class="faq-container">
-    
+    <h2>maine quetions of user :</h2>
     <div class="faq-item">      
         <input type="checkbox" id="faq1" class="faq-checkbox">
         <label for="faq1" class="faq-question">What is the purpose of this website?</label>
@@ -257,7 +369,7 @@
 </div>
 
 
-    <!--  end rate block-->
+    <!--  end quetions block-->
 
 
 <!--End slide -->
@@ -269,8 +381,7 @@
                 <a href="index.html" ><img src="image/logo.jpg" alt="Wejha Logo"></a>
             </div>
             <div class="social-icons">
-                <a href="https://github.com/AlmontherAlhdhrami-
-                " target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/AlmontherAlhdhrami" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
