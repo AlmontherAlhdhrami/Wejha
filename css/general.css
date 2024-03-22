@@ -65,3 +65,22 @@ vbar-brand img {
     margin-top: 10px;
     font-size: 14px;
   }
+/* Small devices (phones) */
+@media (max-width: 576px) {
+ 
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+}
+
+/* Large devices (laptops and desktops) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large desktops, TVs) */
+@media (min-width: 1200px) {
+ 
+}
