@@ -3,7 +3,7 @@
    
     
     background: linear-gradient(120deg, #4e80d1, #c2e9fb);;
-    border: 2px solid #4CAF50;
+   
     border-radius: 5px;
     padding: 20px;
     width: 500px;
@@ -14,7 +14,7 @@ table {
     border-collapse: collapse;
 }
 td, th {
-    border: 1px solid #4CAF50;
+    
     text-align: left;
     padding: 8px;
 }
@@ -35,7 +35,7 @@ input[type=text], input[type=time], input[type=date], input[type=number] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #4CAF50;
+   
     border-radius: 4px;
     box-sizing: border-box;
 }
