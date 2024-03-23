@@ -87,6 +87,56 @@
             background: #3f8d34;
             color: #333;
         }
+
+        /* Existing CSS for larger screens */
+section.ContactUs {
+    margin: 25px auto;
+    background-image: url("image/caravan_us.jpg");
+    background-repeat: no-repeat;
+    width: 100%; /* Make width responsive */
+    max-width: 800px; /* Max width to maintain design */
+    height: auto; /* Changed from fixed height */
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+form {
+    background: white;
+    box-sizing: border-box;
+    width: 100%; /* Make form take full width of its parent */
+    max-width: 400px; /* Max width for the form */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%; /* Make inputs responsive */
+    max-width: 300px; /* Max width for the inputs */
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 10px 0px;
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    section.ContactUs {
+        flex-direction: column;
+        background-position: center; /* Adjust background position for mobile */
+    }
+
+    form {
+        width: 90%; /* Allow some space on the sides on smaller screens */
+        margin: 20px auto; /* Center the form with automatic margins */
+    }
+}
+
     </style>
     
 </head>
