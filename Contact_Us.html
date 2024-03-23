@@ -160,20 +160,22 @@
     <!-- Contact us Section -->
     <!--i use class="form-control"-->
     <section class="ContactUs">
-        <form>
+        <form action="https://formsubmit.co/asfz.2000@gmail.com"  method="POST">
             <h1>Contact us</h1>
             <div>
                 <label>Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="name" required>
             </div>
             <div>
                 <label>Email address</label>
-                <input type="email" class="form-control">
+                <input type="email" class="form-control" name="email" required>
             </div>
             <div>
                 <label>Message</label>
-                <textarea style="resize: none;" cols="30" rows="5" class="form-control" ></textarea>
+                <textarea style="resize: none;" cols="30" rows="5" class="form-control" name="message" required ></textarea>
             </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <button>Submit</button>
         </form>
     </section>
