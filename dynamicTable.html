@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="icon" href="image/logo.jpg" type="image/icon type">
+    <script src="js/dynamictable.js"></script>
+    <style>
+
+table,th,td{border: 2px solid chocolate;}
+button{
+
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+a{
+    border: 2px solid;
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-decoration: none;
+}
+body{display: inline;}
+    </style>
+</head>
+<body>
+    <center>
+        <table>
+            <th>
+    <button onclick="generateReservationTable()" >Generate Reservation Table</button></th>
+    <th>
+    <button onclick="generateMonthlyTable()">Generate Monthly Table</button></th>
+    <th>
+    <button onclick="reset()">clear</button></th>
+    <th> <a href="index.html"> back to home</a></th>
+</table> 
+    <div id="reservationTable"></div>
+    <div id="monthlyTable"></div>
+    
+    </center>
+
+    
+</body>
+</html>

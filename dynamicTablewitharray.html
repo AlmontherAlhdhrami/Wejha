@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Tables with arrays</title>
+    <style>
+        table,th,td{
+            border: 2px solid ;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Reservation Statistics</h2>
+    <table id="reservationTable" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Average Reservations</th>
+                <th>Lowest Reservation Period</th>
+                <th>High Reservation Periods</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated dynamically -->
+        </tbody>
+    </table>
+
+    <h2>Monthly Statistics</h2>
+    <table id="monthlyTable" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Highest Period</th>
+                <th>Lowest Period</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated dynamically -->
+        </tbody>
+    </table>
+<br>
+<br> 
+<button onclick="displayTables()">display tables</button>
+<h2> you can only search about content <br> for example input <br> 60 ,January,20th - 25th</h2><br>
+    <form id="searchForm">
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" name="searchInput">
+        <button type="button" onclick="search()">Search</button>
+    </form>
+
+    <div id="searchResults"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
