@@ -20,19 +20,31 @@ a{
     padding: 20px;
     text-decoration: none;
 }
-body{display: inline;}
+body{
+    box-sizing: border-box;
+    box-shadow: linear-gradient(rgb(83, 107, 146),darkgray);
+    background: linear-gradient(rgb(83, 107, 146),darkgray);
+    width: 800px;
+    height: 600px;
+   }
+   
     </style>
 </head>
 <body>
     <center>
-        <table>
-            <th>
+         <h1>DYNAMIC Table with object </h1>
+    </center>
+    <br>
+    <br>
+    <center>
+        <table >
+            <th class="a">
     <button onclick="generateReservationTable()" >Generate Reservation Table</button></th>
-    <th>
+    <th class="a">
     <button onclick="generateMonthlyTable()">Generate Monthly Table</button></th>
-    <th>
+    <th class="a"> 
     <button onclick="reset()">clear</button></th>
-    <th> <a href="index.html"> back to home</a></th>
+    <th class="a"> <a href="index.html"> back to home</a></th>
 </table> 
     <div id="reservationTable"></div>
     <div id="monthlyTable"></div>

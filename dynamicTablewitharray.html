@@ -8,10 +8,24 @@
         table,th,td{
             border: 2px solid ;
         }
+        button{
+
+background-color: cornflowerblue;
+padding: 20px;
+}
+body{
+    box-sizing: border-box;
+    box-shadow: linear-gradient(rgb(83, 107, 146),darkgray);
+    background: linear-gradient(rgb(83, 107, 146),darkgray);
+    width: 800px;
+    height: 800px;
+   }
+   
     </style>
     
 </head>
 <body>
+    <center>
     <h2>Reservation Statistics</h2>
     <table id="reservationTable" class="table table-bordered">
         <thead>
@@ -46,12 +60,12 @@
 <h2> you can only search about content <br> for example input <br> 60 ,January,20th - 25th</h2><br>
     <form id="searchForm">
         <label for="searchInput">Search:</label>
-        <input type="text" id="searchInput" name="searchInput">
+        <input type="text" id="searchInput" name="searchInput" style="width: 400px; ">
         <button type="button" onclick="search()">Search</button>
     </form>
 
     <div id="searchResults"></div>
-
+</center>
     <script src="js/script.js"></script>
 </body>
 </html>
