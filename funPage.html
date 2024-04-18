@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Puzzle Game</title>
+    <link rel="stylesheet" href="css/funPageStyles.css">
+</head>
+<body>
+    <div class="drag" id="drag">
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block1"
+            style="--img:url(1.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block2"
+            style="--img:url(image/2.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block3"
+            style="--img:url(image/3.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block4"
+            style="--img:url(image/4.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block5"
+            style="--img:url(image/5.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block6"
+            style="--img:url(image/6.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block7"
+            style="--img:url(image/7.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block8"
+            style="--img:url(image/8.png);"></div>
+        </div>
+        <div class="dragBox">
+            <div class="images" draggable="true" 
+            ondragstart="drag(event)" id="block9"
+            style="--img:url(image/9.png);"></div>
+        </div>
+    </div>
+
+    <div class="board">
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" 
+        ondragover="allowDrop(event)"></div>
+    </div>
+
+    <button class="reset" onClick="window.location.reload
+    ();">Reset Puzzle</button>
+
+    <script>
+
+        function drag(event){
+            event.dataTransfer.setData("text", event.target.
+            id);
+        }
+
+        function allowDrop(event){
+            event.preventDefault();
+        }
+
+        function drop(event){
+            event.preventDefault();
+            let data = event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById
+            (data))
+
+        }
+
+        onload = function(){
+            let parent = document.getElementById('drag');
+            let frag = document.createDocumentFragment();
+            while (parent.children.length){
+                frag.appendChild(parent.children[Math.floor
+            (Math.random() * parent.children.length)]);  
+          }
+          parent.appendChild(frag);
+        }
+    </script>
+</body>
+</html>
