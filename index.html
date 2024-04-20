@@ -391,7 +391,13 @@
 
 
     <!--  end quetions block-->
-
+    <div style="position: fixed; bottom: 0; width: 100%; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: large;">
+      <marquee direction="left" behavior="scroll" scrollamount="5">
+        <div id="marquee-text">
+          Welcome to the Wejha website! Today is <span id="date-span"></span>, and the time is <span id="time-span"></span>
+        </div>
+      </marquee>
+    </div>
 
 <!--End slide -->
     
@@ -414,20 +420,33 @@
    
 </body>
  <!--Hleper of Bootstrap slide  -->
- <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    var myCarousel = document.querySelector('#myCarousel');
-    var carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 1000,
-      wrap: true
-    });
-  });
-</script>
-
-
-
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+ <!-- Initialization of the Carousel with 3 seconds interval -->
+ <script>
+  $(document).ready(function () {
+    $("#myCarousel").carousel({
+      interval: 3000,
+    });
+  });
+</script>
+<script>
+  function updateDateTime() {
+    var now = new Date();
+    var dateString = now.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+    var timeString = now.toLocaleTimeString();
+    document.getElementById('date-span').textContent = dateString;
+    document.getElementById('time-span').textContent = timeString;
+  }
+
+  // Update the date and time upon loading the page
+  updateDateTime();
+  
+  // Set the updateDateTime to run every 30 seconds
+  setInterval(updateDateTime, 30000);
+</script>
 
 </html>
