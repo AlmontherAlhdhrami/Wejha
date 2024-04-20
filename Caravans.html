@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="icon" href="image/logo.jpg" type="image/icon type" />
+    <script src="js/cal.js"></script>
     <title>Caravans</title>
   </head>
 
@@ -343,16 +344,16 @@
       <section class="section__container Carvan_containar">
         <h2 class="section__header">Carvanss</h2>
         <div class="Chalet_grid">
-          <div class="CarvanCard">
+          <div class="CarvanCard" data-price="150" data-name="Khareef Salalah" onclick="redirectToReservation(this)">
             <img src="image/car1.webp" alt="Carvans" />
             <div class="Carvan_content">
-              <div class="CarvanCard__header">
-                <h4>Khareef Salalah</h4>
-                <h4>150 R.O</h4>
-              </div>
-              <p>Salalah , Dohfar</p>
+                <div class="CarvanCard__header">
+                    <h4>Khareef Salalah</h4>
+                    <h4>150 R.O</h4>
+                </div>
+                <p>Salalah, Dohfar</p>
             </div>
-          </div>
+        </div>
           <div class="CarvanCard">
             <img src="image//car2.webp" alt="Carvans" />
             <div class="Carvan_content">
@@ -360,7 +361,13 @@
                 <h4>New Mualeih</h4>
                 <h4>200 R.O</h4>
               </div>
+              <div style="display: flex;">
               <p>Seeb, Mualeih</p>
+              <form action="Reservation.html" method="GET" style="margin-left:100px;">
+                <input type="hidden" name="price" value="200">
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+          </div>
             </div>
           </div>
           <div class="CarvanCard">
@@ -370,7 +377,12 @@
                 <h4>Al-hadrami light</h4>
                 <h4>200 R.O</h4>
               </div>
+              <div style="display: flex;">
               <p>Ezeki, Al-dakhiliah</p>
+              <form action="Reservation.html" method="GET" style="margin-left:100px;">
+                <input type="hidden" name="price" value="200">
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form></div>
             </div>
           </div>
           <div class="CarvanCard">
@@ -380,7 +392,12 @@
                 <h4>The lolah rest</h4>
                 <h4>700 R.O</h4>
               </div>
+              <div style="display: flex;">
               <p>AL-suwaiq , Al-batinah north</p>
+              <form action="Reservation.html" method="GET" style="margin-left:100px;">
+                <input type="hidden" name="price"  value="700">
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form></div>
             </div>
           </div>
           <div class="CarvanCard">
@@ -390,7 +407,12 @@
                 <h4>The wadi badi</h4>
                 <h4>649 R.O</h4>
               </div>
+              <div style="display: flex;">
               <p>al-mubailah, seeb</p>
+              <form action="Reservation.html" method="GET" style="margin-left:100px;">
+                <input type="hidden" name="price" value="649">
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form></div>
             </div>
           </div>
           <div class="CarvanCard">
@@ -400,12 +422,21 @@
                 <h4>Mattrah Sands</h4>
                 <h4>549 R.O</h4>
               </div>
+              <div style="display: flex;">
               <p>Muscat, Mattrah</p>
+              <form action="Reservation.html" method="GET" style="margin-left:100px;">
+                <input type="hidden" name="price" value="549">
+                <button type="submit" class="btn btn-primary" >Book Now</button>
+            </form></div>
             </div>
           </div>
         </div>
       </section>
+
+       
     </body>
+
+  
 
     <!--start footer-->
     <footer class="site-footer">

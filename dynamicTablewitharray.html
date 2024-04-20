@@ -5,34 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Tables with arrays</title>
     <style>
-        table,th,td{
-            border: 2px solid  rgb(232, 226, 221);
+         body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(rgb(83, 107, 146), darkgray);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
-        button{
 
-background-color: cornflowerblue;
-padding: 20px;
-}
-body{
-    box-sizing: border-box;
-    box-shadow: linear-gradient(rgb(83, 107, 146),darkgray);
-    background: linear-gradient(rgb(83, 107, 146),darkgray);
-    width: 800px;
-    height: 800px;
-   }
-   a{
-   
-    border: 2px solid;
-    background-color: cornflowerblue;
-    padding: 20px;
-    text-decoration: none;
-}
-.a{margin-top: 100px;}
+        h2 {
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        th, td {
+            border: 2px solid rgb(232, 226, 221);
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(100, 149, 237, 0.5); /* Slightly transparent cornflowerblue */
+        }
+
+        button, a {
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        button:hover, a:hover {
+            background-color: deepskyblue;
+        }
+
+        #searchForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #searchForm input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #searchResults {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+        }
     </style>
     
 </head>
 <body>
-    <center> <div class="a"><a href="index.html"> back to home</a></div></center><br>
+    <center> <div class="a" style="margin: 50px;"><a href="index.html"> back to home</a></div></center><br>
     <center>
     <h2>Reservation Statistics</h2>
     <table id="reservationTable" class="table table-bordered">
