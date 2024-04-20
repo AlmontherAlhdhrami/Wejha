@@ -20,7 +20,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const days = parseInt(document.querySelector('[name="days"]').value);
         const price = parseInt(new URLSearchParams(window.location.search).get('price'));
 
-        const totalPrice = price * days;
+        var  totalPrice = price * days;
+        if (days === 1){
+            totalPrice =price
+        }
+        else if (days===2 ){
+            totalPrice = price *2*(0.25)
+
+        }
+        else{
+               totalPrice = price *3*(0.5)
+        }
 
         // Save the data to localStorage
         localStorage.setItem('reservationData', JSON.stringify({
