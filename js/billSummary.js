@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (reservationData) {
         const detailsElement = document.getElementById('billDetails');
         detailsElement.innerHTML = `
+            <p>resrevation in : ${reservationData.name}</p>
             <p>Name: ${reservationData.fullName}</p>
             <p>Phone: ${reservationData.phone}</p>
             <p>Date: ${reservationData.date}</p>

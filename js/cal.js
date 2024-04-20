@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Save the data to localStorage
         localStorage.setItem('reservationData', JSON.stringify({
+            name:new URLSearchParams(window.location.search).get('name'),
             phone: phone,
             fullName: fullName,
             date: date,
