@@ -2,14 +2,14 @@
 var reservationData = [
     { month: "January", averageReservations: 50, lowestPeriod: "5th - 10th", highReservationPeriods: "Winter" },
     { month: "February", averageReservations: 60, lowestPeriod: "12th - 15th", highReservationPeriods: "Summer" },
-    // Add more data as needed
+   
 ];
 
 // Array for monthly eleistics
 var monthlyData = [
     { month: "January", highestPeriod: "20th - 25th", lowestPeriod: "1st - 5th" },
     { month: "February", highestPeriod: "10th - 15th", lowestPeriod: "26th - 28th" },
-    // Add more data as needed
+    
 ];
 
 // Function to generate table rows for reservation eleistics
