@@ -7,55 +7,67 @@
     <link rel="stylesheet" href="funPageStyles.css">
 </head>
 <body>
+    <!-- Puzzle pieces -->
     <div class="drag" id="drag">
         <div class="dragBox">
+            <!-- Puzzle piece 1 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block1"
             style="--img:url(1.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 2 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block2"
             style="--img:url(2.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 3 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block3"
             style="--img:url(3.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 4 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block4"
             style="--img:url(4.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 5 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block5"
             style="--img:url(5.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 6 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block6"
             style="--img:url(6.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 7 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block7"
             style="--img:url(7.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 8 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block8"
             style="--img:url(8.png);"></div>
         </div>
         <div class="dragBox">
+            <!-- Puzzle piece 9 -->
             <div class="images" draggable="true" 
             ondragstart="drag(event)" id="block9"
             style="--img:url(9.png);"></div>
         </div>
     </div>
 
+    <!-- Puzzle board -->
     <div class="board">
+        <!-- Drop zones for puzzle pieces -->
         <div class="dropBox" ondrop="drop(event)" 
         ondragover="allowDrop(event)"></div>
         <div class="dropBox" ondrop="drop(event)" 
@@ -76,37 +88,49 @@
         ondragover="allowDrop(event)"></div>
     </div>
 
-    <button class="reset" onClick="window.location.reload
-    ();">Reset Puzzle</button>
+    <!-- Button to reset puzzle -->
+    <button class="reset" onClick="window.location.reload();">
+    Reset Puzzle</button>
     
 
     <script>
-
+        // Function to set the data to be dragged
         function drag(event){
-            event.dataTransfer.setData("text", event.target.
-            id);
+            // Set the id of the dragged element as the data to be 
+            // transferred
+            event.dataTransfer.setData("text", event.target.id);
         }
 
+        // Function to allow dropping
         function allowDrop(event){
+            // Prevent default behavior to allow dropping
             event.preventDefault();
         }
 
+        // Function to drop the dragged element
         function drop(event){
+            // Prevent default behavior
             event.preventDefault();
+            // Get the id of the dragged element from the data 
+            // transfer
             let data = event.dataTransfer.getData("text");
-            event.target.appendChild(document.getElementById
-            (data))
-
+            // Append the dragged element to the drop target
+            event.target.appendChild(document.getElementById(data));
         }
 
+        // Function to shuffle the puzzle pieces on page load
         onload = function(){
+            // Get the container of puzzle pieces
             let parent = document.getElementById('drag');
+            // Create a document fragment to hold shuffled elements
             let frag = document.createDocumentFragment();
+            // Shuffle the children of the container
             while (parent.children.length){
-                frag.appendChild(parent.children[Math.floor
-            (Math.random() * parent.children.length)]);  
-          }
-          parent.appendChild(frag);
+                // Get a random child and append it to the fragment
+                frag.appendChild(parent.children[Math.floor(Math.random() * parent.children.length)]);  
+            }
+            // Append shuffled elements back to the container
+            parent.appendChild(frag);
         }
     </script>
 </body>
