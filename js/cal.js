@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice = price;
         } else if (days === 2) {
             // Special discount formula for two days
-            totalPrice = (price * 2) / 2;
+            totalPrice = (price * 4) / 3;
         } else {
             // Another discount formula for more than two days
-            totalPrice = (price * 3) / 3;
+            totalPrice = (price * 5) / 4;
         }
 
         // Save the reservation data to localStorage
