@@ -1,8 +1,8 @@
 <?php
-include 'conactiondata.php'; // Include your DB config file
 
-$conn = connectDatabase(); // Connect to the database
 
+
+$conn = new mysqli("localhost", "root", "", "wejha");// Connect to the database
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve data from POST
     $phone = $_POST['phone'];
