@@ -15,7 +15,7 @@ class User {
 
 // Array of User objects
 $users = [];
-array_push($users, new User("Ahmed Alkhaldi", "M", "ahmedalk@example.com", "ahmed123"));
+array_push($users, new User($post["$name"], $post["$gender"], $post["$email"], $post["$username"]));
 // Add more users as needed
 
 function displayUsers($users) {
