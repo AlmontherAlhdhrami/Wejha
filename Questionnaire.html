@@ -193,7 +193,7 @@
     </nav>
     <!-- End Header -->
     <div class="questionnaire-container">
-      <form id="feedback-form">
+      <form id="feedback-form" action="save_feedback.php" method="POST">
         <h2>Customer Feedback Form</h2>
 
         <!-- Text Input for Name -->
@@ -230,15 +230,10 @@
         </fieldset>
 
         <!-- Checkbox for Services -->
-        <label for="services">What services did you use?</label><br />
-        <label
-          ><input type="checkbox" name="services" value="chalet" />
-          Chalet</label
-        >
-        <label
-          ><input type="checkbox" name="services" value="caravan" />
-          Caravan</label
-        >
+        <label for="feedback_id">What services did you use?</label><br />
+        <label><input type="checkbox" name="feedback_id" value="chalet" /> Chalet</label>
+<label><input type="checkbox" name="feedback_id" value="caravan" /> Caravan</label>
+
 
         <!-- Textarea for Additional Feedback -->
         <label for="additional-feedback">Additional Feedback:</label>
