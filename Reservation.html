@@ -15,7 +15,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="icon" href="image/logo.jpg" type="image/icon type">
-    <script src="js/cal.js"></script>
     <title>Reservation</title>
    
   <style>
@@ -94,7 +93,8 @@
             <div class="row justify-content-center"> <!-- Center the booking form -->
                 <div class="col-lg-6 col-md-8 col-sm-10"> <!-- Adapt sizes for different screens -->
                     <div class="booking-form">
-                        <form action="Registration.php" method="get">
+                         <form action="Registration.php" method="POST" enctype="multipart/form-data">
+                            
                             <div class="text-center mb-4">
                                 <img src="image/logo.jpg" alt="" style="width: 100px;">
                                 <h2>Booking Now!</h2>
@@ -120,8 +120,12 @@
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                 </select>
+                                <br>                                
+
                                 <div id="selectedCaravanInfo"></div>
-                                <input type="submit" value="Submit" class="btn btn-primary" onclick="">
+                                <input type="submit" value="send data to database" class="btn btn-primary" onclick="">
+                                <input type="submit" value="Submit" class="btn btn-primary" id="bill" onsubmit="">
+
                             </div>
                         </form>
                     </div>

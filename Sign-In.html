@@ -160,34 +160,37 @@
     <!-- Sign In Section -->
     
     <section class="Signin">
-        <form action="sigindata.php" method="POST">
+        <form action="process_signin.php" method="POST">
             <h1>Sign In</h1>
             <div>
                 <label>Name</label>
-                <input type="text">
+                <input type="text" name="name">
             </div>
             <div style="display: flex;">
-                <label for="">Male</label><input type="radio" name="gender" id="">
-                <label for="">Female</label><input type="radio" name="gender" id="">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="female" id="female">
             </div>
             <div>
                 <label>Email address</label>
-                <input type="email">
+                <input type="email" name="email">
             </div>
             <div>
                 <label>Username</label>
-                <input type="text">
+                <input type="text" name="username">
             </div>
             <div>
                 <label>Password</label>
-                <input type="Password">
+                <input type="password" name="password">
             </div>
             <div>
                 <label>Confirm Password</label>
-                <input type="Password">
+                <input type="password" name="confirm_password">
             </div>
-            <button>Sign In</button>
+            <button type="submit">Sign In</button>
         </form>
+        
     </section>
     
     <!-- End Sign In Section -->

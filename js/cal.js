@@ -14,8 +14,8 @@ function redirectToReservation(element) {
 // Event listener for when the DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
     // Select the form element and add an event listener for the submit event
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
+    const form = document.getElementById("bill");
+    form.addEventListener('click', function(event) {
         // Prevent the form from submitting the traditional way
         event.preventDefault();
 
